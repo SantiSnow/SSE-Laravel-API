@@ -14,7 +14,5 @@ class Articulo extends Model
         'Seccion'
     ];
 
-    private $timestamps = false;
-
     use HasFactory;
 }
