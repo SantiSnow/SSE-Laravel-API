@@ -35,7 +35,5 @@ class ArticulosController extends Controller
         $articulo->Precio = $precio;
 
         $articulo->save();
-
-
     }
 }
