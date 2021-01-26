@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Stock</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">Inicio</a>
+            <ul class="right hide-on-med-and-down">
+
+                <li><a href="actualizar.html"><i class="material-icons">view_module</i></a></li>
+                <li><a href="actualizar.html"><i class="material-icons">refresh</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="encabezado">
+            <h2>Bienvenido a Mi Stock</h2>
+            <h4>Aquí puede ver el stock en tiempo real</h4>
+        </div>
+
+
+    </div>
+
+
+    <div class="row">
+        <form class="col s6" method="post" action="http://laravel.test/actualizar">
+            @csrf
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Número de producto" id="id" name="id" type="number" class="validate">
+                    <label for="id">ID del producto</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="precio" name="precio" placeholder="Nuevo Precio del producto" type="number" class="validate">
+                    <label for="precio">Precio</label>
+                </div>
+            </div>
+            <br />
+            <br />
+            <button type="submit" class="waves-effect waves-light btn">Actualizar</button>
+        </form>
+    </div>
+
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
