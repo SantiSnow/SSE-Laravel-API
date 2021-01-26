@@ -17,7 +17,7 @@ class ArticulosController extends Controller
                 echo 'data: ' . json_encode(Articulo::all()) . "\n\n";
                 ob_flush();
                 flush();
-                usleep(1000000);
+                usleep(10000000);
             }
         });
 
