@@ -25,7 +25,6 @@ class ArticulosController extends Controller
         $response->headers->set('X-Accel-Buffering', 'no');
         $response->headers->set('Cach-Control', 'no-cache');
         return $response;
-        //return Articulo::all();
     }
 
     public function actualizarArticulo(Request $req){
