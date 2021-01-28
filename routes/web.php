@@ -21,4 +21,4 @@ Route::post('/actualizar', [\App\Http\Controllers\ArticulosController::class, 'a
 
 Route::post('/crear', [\App\Http\Controllers\ArticulosController::class, 'crearArticulo']);
 
-Route::delete('/borrar', [\App\Http\Controllers\ArticulosController::class, 'borrarArticulo']);
+Route::post('/borrar', [\App\Http\Controllers\ArticulosController::class, 'borrarArticulo']);

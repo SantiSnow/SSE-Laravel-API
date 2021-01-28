@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
     <!-- CSS -->
     <link rel="stylesheet" href="index.css">
 
@@ -35,13 +34,11 @@
             <h2>Bienvenido a Mi Stock</h2>
             <h4>En esta sección puede borrar un producto por su código</h4>
         </div>
-
-
     </div>
 
 
     <div class="row">
-        <form class="col s6" method="delete" action="http://laravel.test/borrar">
+        <form class="col s6" action="http://laravel.test/borrar" method="post">
             <div class="row">
                 <div class="input-field col s6">
                     <input placeholder="Número de producto" id="id" name="id" type="number" class="validate">

@@ -34,7 +34,7 @@ if (typeof (EventSource) !== "undefined") {
 
             if(precioActual != precioNuevo){
                 console.log("El precio ha cambiado");
-                $("#mensaje").html("<p>Ha habido cambios en los precios de los productos.</p>");
+                $("#mensaje").html("<br /><div class='card-panel teal lighten-2'>Ha habido cambios en los precios de los productos.</div>");
 
                 $("#" + datosObtenidos[i].id).html(precioNuevo);
             }
