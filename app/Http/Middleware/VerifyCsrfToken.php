@@ -14,5 +14,7 @@ class VerifyCsrfToken extends Middleware
     protected $except = [
         //excluida de csrf para poder ser llamada a la api desde el cliente sin blade
         'http://laravel.test/actualizar',
+        'http://laravel.test/crear',
+        'http://laravel.test/borrar',
     ];
 }

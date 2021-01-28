@@ -7,8 +7,10 @@ if (typeof (EventSource) !== "undefined") {
     source.onmessage = (event) => {
         const datosObtenidos = JSON.parse(event.data);
 
+        const cantProd = datosObtenidos.length;
+
         for (i in datosObtenidos) {
-            if(vuelta < 3){
+            if(vuelta < cantProd){
                 $("#articulos").append(`
                 <div class="col s12 m3">
                     <h5 class="header">${datosObtenidos[i].Nombre}</h5>
@@ -29,9 +31,6 @@ if (typeof (EventSource) !== "undefined") {
             
             const precioActual = $("#" + datosObtenidos[i].id).text();
             const precioNuevo = datosObtenidos[i].Precio;
-            
-            console.log("El precio actual del producto es de " + precioActual);
-            console.log("El nuevo precio es de " + datosObtenidos[i].Precio);
 
             if(precioActual != precioNuevo){
                 console.log("El precio ha cambiado");
