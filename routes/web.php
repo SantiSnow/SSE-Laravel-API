@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [\App\Http\Controllers\ArticulosController::class, 'todosLosArticulos']);
 
 Route::post('/actualizar', [\App\Http\Controllers\ArticulosController::class, 'actualizarArticulo']);
+
+Route::post('/crear', [\App\Http\Controllers\ArticulosController::class, 'crearArticulo']);
+
+

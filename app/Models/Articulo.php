@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Articulo extends Model
 {
+
+
     protected $fillable = [
         'Nombre',
         'Precio',

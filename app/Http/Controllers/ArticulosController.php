@@ -36,4 +36,18 @@ class ArticulosController extends Controller
 
         $articulo->save();
     }
+
+    public function crearArticulo(Request $req){
+        $articulo = new Articulo();
+
+        $articulo->Nombre = $req->get('Nombre');
+        $articulo->Precio = $req->get('Precio');
+        $articulo->Stock = $req->get('Stock');
+        $articulo->Seccion = $req->get('Seccion');
+
+        $articulo->save();
+
+        return $articulo;
+    }
+
 }
