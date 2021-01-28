@@ -58,4 +58,8 @@ class ArticulosController extends Controller
         $articulo->delete();
 
     }
+
+    public function verArticulo($id){
+        return Articulo::find($id);
+    }
 }

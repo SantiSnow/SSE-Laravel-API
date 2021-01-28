@@ -15,8 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\ArticulosController::class, 'todosLosArticulos']);
 
+Route::get('/articulo/{id}', [\App\Http\Controllers\ArticulosController::class, 'verArticulo']);
+
 Route::post('/actualizar', [\App\Http\Controllers\ArticulosController::class, 'actualizarArticulo']);
 
 Route::post('/crear', [\App\Http\Controllers\ArticulosController::class, 'crearArticulo']);
 
-
+Route::delete('/borrar', [\App\Http\Controllers\ArticulosController::class, 'borrarArticulo']);
