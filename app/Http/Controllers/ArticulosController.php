@@ -50,4 +50,12 @@ class ArticulosController extends Controller
         return $articulo;
     }
 
+    public function borrarArticulo(Request $req){
+        $id = $req->get('id');
+
+        $articulo = Articulo::find($id);
+
+        $articulo->delete();
+
+    }
 }
